@@ -242,7 +242,8 @@ a {
 }
 
 .pizza-block__image {
-  width: 260px;
+  width: 280px;
+  height: 250px;
 }
 
 .pizza-block__title {

@@ -26,7 +26,6 @@ function Regestration() {
   });
 
   const onSubmit = async (data: RegisterInterface) => {
-    console.log(data);
     const { username, email, password } = data;
 
     const userData = {
@@ -42,7 +41,7 @@ function Regestration() {
       );
 
       dispatch(creatAccount({ name: username, email, password }));
-      console.log("Data posted successfully:", response.data);
+
       dispatch(pushId({ id: response.data.id }));
       navigate("/accountpanel");
       reset(); // Очищаємо форму після успішної відправки

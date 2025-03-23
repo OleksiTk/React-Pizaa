@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { useSelector } from "react-redux";
 import { StateThree } from "../StateSlice/State.slice";
 import { MdAccountCircle } from "react-icons/md";
-
+import pizzaLogo from "../assets/pizza-logo.svg";
 function Header() {
   type RootState = {
     headerIndexState: StateThree;
@@ -20,11 +20,7 @@ function Header() {
         <div className="container">
           <Link to="/">
             <div className="header__logo">
-              <img
-                width="38"
-                src="../src/assets/pizza-logo.svg"
-                alt="Pizza logo"
-              />
+              <img width="38" src={pizzaLogo} alt="Pizza logo" />
               <div>
                 <h1>React Pizza</h1>
                 <p>Сама смачна піцца на всьому світі</p>

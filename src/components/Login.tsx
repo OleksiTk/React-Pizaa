@@ -42,8 +42,6 @@ function Login() {
 
   // Обробка відправки форми
   const onSubmit = async (data: RegisterInterface) => {
-    console.log(data);
-
     const { username, password } = data;
 
     const account = accounts.find(

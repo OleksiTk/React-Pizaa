@@ -13,13 +13,10 @@ function AccountPanel() {
   const [accountsDetails, setAccountsDetails] = useState<any>([]);
 
   useEffect(() => {
-    console.log("ID з Redux:", id); // Лог для перевірки значення id
-
     const fetchAccounts = async () => {
       try {
         const response = await axios.get(import.meta.env.VITE_API_URL_Account);
         const arrUser = response.data;
-        console.log(arrUser);
 
         for (let i = 0; i < arrUser.length; i++) {
           if (arrUser[i].id == id) {

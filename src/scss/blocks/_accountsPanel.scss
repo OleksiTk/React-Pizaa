@@ -1,0 +1,40 @@
+.account-panel {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  align-items: center;
+  flex-direction: column;
+  &__body {
+    border: 1px solid orangered;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &__name {
+    font-size: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+  }
+  &__email {
+    font-size: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+  }
+  &__admin-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  &__extra {
+    margin-top: 50px;
+  }
+}

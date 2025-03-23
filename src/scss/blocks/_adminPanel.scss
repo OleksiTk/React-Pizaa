@@ -1,0 +1,32 @@
+.admin-panel {
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__creat-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  &__inputs {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__input {
+    border-radius: 20px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid orangered;
+  }
+}

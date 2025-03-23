@@ -1,0 +1,19 @@
+.account {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__path {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__registration {
+    font-size: 25px;
+  }
+  &__login {
+    font-size: 25px;
+  }
+}

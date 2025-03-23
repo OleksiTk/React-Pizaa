@@ -1,0 +1,13 @@
+.search {
+  &__body {
+  }
+  &__input {
+    border: 2px solid #b1a19b;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    &:focus {
+      border-color: #fe5f1e;
+    }
+  }
+}

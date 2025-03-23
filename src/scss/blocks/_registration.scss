@@ -1,0 +1,76 @@
+.registration {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__item-errors {
+    font-size: 10px;
+    color: orangered;
+  }
+}
+.registration__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.registration__preview {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.registration__item-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.registration__item-label {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.registration__item-input {
+  width: 100%;
+  border: 1px solid orangered;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.registration__item-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.registration__item-button button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: orangered;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.registration__item-button button:hover {
+  background-color: darkorange;
+}

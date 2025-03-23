@@ -42,7 +42,7 @@
   font-size: 30px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   .header .container {
     display: flex;
     flex-direction: column;
@@ -825,7 +825,7 @@ a {
   flex-direction: column;
   row-gap: 10px;
 }
-@media (max-width: 380px) {
+@media (max-width: 450px) {
   .account-panel__body {
     border: 0;
   }
@@ -1030,7 +1030,7 @@ body {
   max-width: 1400px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 4500px) {
   .wrapper {
     width: calc(100vw - 20px);
     height: 100%;

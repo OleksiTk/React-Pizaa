@@ -42,6 +42,13 @@
   font-size: 30px;
 }
 
+@media (max-width: 380px) {
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -818,6 +825,11 @@ a {
   flex-direction: column;
   row-gap: 10px;
 }
+@media (max-width: 380px) {
+  .account-panel__body {
+    border: 0;
+  }
+}
 .account-panel__name {
   font-size: 20px;
   padding-top: 20px;
@@ -1018,6 +1030,16 @@ body {
   max-width: 1400px;
 }
 
+@media (max-width: 380px) {
+  .wrapper {
+    width: calc(100vw - 20px);
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 1400px;
+  }
+}
 .content {
   padding: 40px 0;
 }

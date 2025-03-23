@@ -41,3 +41,10 @@
 .header__login {
   font-size: 30px;
 }
+@media (max-width: 380px) {
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}

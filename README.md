@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# React-Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проект був натхненний макетом з каналу [ArchakovBlog](https://www.youtube.com/@ArchakovBlog). Макет та частина коду були використані як основа для розробки.
 
-Currently, two official plugins are available:
+## У цьому проекті використовуються такі технології та бібліотеки:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Axios** — для роботи з API та асинхронними запитами.
+2. **Redux Toolkit** — для керування станом додатка.
+3. **React Hook Form** — для зручної та ефективної роботи з формами.
+4. **React Router** — для маршрутизації в односторінковому додатку.
+5. **Material UI** — для стильного та зручного UI компонування.
+6. **Lodash.js** — для зручних утиліт і функцій.
+7. **react-icons** — для використання іконок у додатку.
+8. **react-paginate** — для пагінації списків на сторінках.
+9. **SCSS** — для організованого та масштабованого стилювання.
+10. **Yup** — для валідації форм з підтримкою схем.
+11. **TypeScript** — для надійної типізації коду.
+12. **MockAPI** — для створення фейкових API для тестування додатку.
 
-## Expanding the ESLint configuration
+## Демо сайту:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Якщо ви хочете побачити, як виглядає проект, ось посилання на його робочу версію:  
+[React Pizza на Vercel](https://react-pizaa.vercel.app/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Додаткові можливості:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Також була реалізована базова авторизація користувачів. Хоча наразі не використовується JWT токенізація, базова валідація є доступною для коректної роботи з користувачами.
